@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete teacher</title>
+</head>
+<body>
+<form action="#" th:action="@{/teacher/delete}" th:object="${teacher}" method="post">
+    Teacher ID :<input type="text" th:field="*{id}"/><br>
+    Teacher name :<input type="text" th:field="*{name}"/><br>
+    Teacher salary :<input type="text" th:field="*{salary}"/><br>
+    <button type="submit" class="btn btn-danger">delete</button>
+</form>
+</body>
+</html>

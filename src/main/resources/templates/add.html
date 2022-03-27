@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add teacher</title>
+    <link rel="stylesheet" href="https://cd.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<form action="#" th:action="@{/teacher/save}" th:object="${teacher}" method="post">
+    Teacher ID :<input type="text" th:field="*{id}"/><br/>
+    Teacher name :<input type="text" th:field="*{name}"/><br/>
+    Teacher salary :<input type="text" th:field="*{salary}"/><br/>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher list</title>
+    <link rel="stylesheet" href="https://cd.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<table  class="table table-striped table-dark">
+    <thead>
+    <i class="fa-solid fa-list">
+    <th>Id</th>
+    <th>Name</th>
+    <th>Salary</th>
+    </i>
+    </thead>
+    <tbody>
+    <tr th:each="i:${teachers}">
+        <td th:text="${i.id}">0</td>
+        <td th:text="${i.name}">0</td>
+        <td th:text="${i.salary}">0</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

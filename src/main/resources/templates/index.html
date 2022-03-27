@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+</head>
+<body>
+<h2>Teacher portal</h2>
+<a href="/teacher/new">Add teacher</a>
+<br/>
+<a href="/teacher/list">Teacher list</a>
+<form action="/teacher/update" method="get">
+    Update teacher with id: <input type="text" name="id">
+    <input type="submit" value="Search">
+</form>
+<form action="/teacher/delete" method="post">
+    delete teacher with id <input type="text" name="id">
+    <input type="submit" value="Search">
+</form>
+</body>
+</html>
